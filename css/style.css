@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+:root {
+  --mainPink: #ef7998;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+}
+
+body {
+  font-family: "Kaushan Script", cursive;
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+}
+/* globel propereis */
+.btn-pink{
+  color: var(--mainPink)!important;
+  border: .2rem solid var(--mainPink)!important;
+}
+.btn-black{
+  color: var(--mainBlack)!important;
+  border: .2rem solid var(--mainBlack)!important;
+}
+.btn-black:hover{
+  color:var(--mainPink)!important;
+  background-color: var(--mainBlack)!important;
+}
+.btn-pink:hover{
+  color:var(--mainBlack)!important;
+  background-color: var(--mainPink)!important;
+}
+/* header style */
+/* toggler icon style */
+#navbar{
+position: fixed;
+width: 100%;
+background-color: rgba(0,0,0,0.3);
+z-index: 100;
+}
+.navbar-toggler{
+  outline: none!important;
+}
+.toggler-icon{
+  color: var(--mainPink);
+  font-size: 2.5rem;
+}
+/* nav links */
+.nav-link{
+  color: var(--mainPink);
+  font-size: 1.5rem;
+  transition: all .6s ease-in-out;
+}
+.nav-link:hover{
+  color: var(--mainBlack);
+}
+.info
+.info-icon{
+  color: var(--mainBlack);
+  transition: all .4s ease;
+  border-radius: 10px;
+}
+.info-item {
+  color: var(--mainBlack);
+  border: 2px solid var(--mainBlack);
+  transition: all .4s ease;
+  border-radius: 10px;
+  padding: .1 rem .6rem;
+  cursor: pointer;
+}
+.info-icon{
+  color: var(--mainBlack);
+  cursor: pointer;
+}
+
+.info-item:hover {
+  background-color: var(--mainPink);
+  color: var(--mainWhite);
+  border: 2px solid var(--mainWhite);
+
+}
+.info-item:hover .info-icon{
+  background-color: var(--mainPink);
+  color: var(--mainWhite);
+}
+/* banner */
+.max-height{
+  min-height: calc(100vh - 76px);
+  background: linear-gradient(var(--yellowTrans) ,var(--yellowTrans)),url('../img/headerBcg.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.banner{
+  color: var(--mainWhite);
+}
+.banner-title{
+  font-size: 4rem;
+  color: var(--mainPink);
+}
+.banner-link{
+  color: var(--mainBlack);
+  font-size: 1.5rem;
+  border: .2rem solid var(--mainBlack);
+  transition: all .3s ease;
+}
+.banner-link:hover{
+  color: var(--mainPink);
+  background-color: var(--mainBlack);
+}
+/* end of header style */
+/* about section style */
+.about-img{
+  position: relative;
+}
+.about-img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -1.5rem;
+  left: -1.7rem;
+  outline: .6rem solid var(--mainYellow);
+  z-index: -1;
+  transition: all 1s linear;
+}
+.about-img:hover:before{
+  top: 0;
+  left: 0;
+}
+/* end of about section */
+/* store section */
+.store{
+  background: var(--mainGrey);
+}
+.search-box{
+  background-color: var(--mainPink);
+  color: black;
+}
+.single-item{
+  transition: all ease .3s;
+}
+.single-item:hover{
+  box-shadow: 0 5px 10px var(--mainBlack);
+}
+.img-container{
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.store-item-img{
+  transition: all ease 1s;
+}
+.img-container:hover .store-item-img{
+  transform: scale(1.2);
+}
+.store-item-icon{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: .7rem;
+  background-color: var(--mainYellow);
+  border-top-left-radius: 1rem;
+  transform: translate(100% ,100%);
+  transition: all ease 1s;
+}
+.img-container:hover .store-item-icon{
+  transform: translate(0,0);
+}
+.store-item-icon:hover{
+  color: var(--mainPink);
+}
+/* services section */
+.services{
+  color: var(--mainWhite);
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+  url('../img/servicesBcg.jpeg')center/cover fixed no-repeat;
+}
+.service-title{
+letter-spacing: .3rem;
+}
+.service-text{
+  word-spacing: .3rem;
+}
+/* footer section */
+.footer-title{
+  background: var(--mainBlack);
+}
+.footer-contact{
+  background: var(--mainGrey  );
+}
+.footer-icon{
+  font-size: 1.5rem;
+  color: var(--mainWhite);
+  transition: all .4s ease-in-out;
+}
+.footer-icon:hover{
+  color: var(--mainPink);
+}
